@@ -47,12 +47,13 @@ jQuery(function($) {
 					// change link to go directly to full screen preview
 					.find('.thumbnail a').each(function(){
 						this.href = fshref = this.href.split("?")[0].replace(/item\/([^\/]*)/, "item/$1/full_screen_preview")
+						this.target = '_blank';
 					})
 						// change thumbnail to the preview image
 						.find('img').each(function(){
 							this.src = $(this).data('preview-url');
 						}).end()
-					.append('<div class="bg otherstuff"><h3><a href="'+fshref+'">Fullscreen preview</a></h3></div>').end()
+					.append('<div class="bg otherstuff"><h3><a href="'+fshref+'" target=_blank>Fullscreen preview</a></h3></div>').end()
 		})
 		.trigger('reload')
 	
