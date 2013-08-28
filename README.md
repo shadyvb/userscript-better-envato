@@ -6,6 +6,7 @@ Changes in Envato UI:
 - Thumbnail only approach
 - Hover over thumbnail to see information (title, tags, price, etc..)
 - Default link goes to fullscreen preview, title goes to information page
+- Opens FS links in new tabs, duh!
 
 Changes to script:
 - Styling info is added permanently to the page via a `<style>` tag
